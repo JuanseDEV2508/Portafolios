@@ -36,5 +36,5 @@ Organización simple de perfiles.
 Clona el repositorio:
 bash
 Copiar código
-git clone https://github.com/usuario/portfolio-hub.git
+git clone https://github.com/JuanseDEV2508/Portafolios.git
 Sube o actualiza tu portafolio en el repositorio.
