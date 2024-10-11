@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <meta name="keywords" content="Portafolio, Desarollador, Front-End" />
+    <title aria-label="Mi Portafolio">Mi Portafolio</title>
+    <link rel="icon" href="icoPorta.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
-    <header>
+    <header aria-label="Encabezado">
         <nav>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#proyectos" aria-label="Proyectos">Proyectos</a>
+            <a href="#habilidades" aria-label="Habilidades">Habilidades</a>
+            <a href="#contacto" aria-label="Contacto">Contacto</a>
         </nav>
     </header>
 
-    <div class="contenido">
+    <div class="contenido" aria-label="Mi Perfil">
         <div class="foto-container">
-            <img src="Anderson.jpg" alt="Foto de perfil" class="foto-redondeada">
-            <h1 class="nombre-frente">Anderson Losada</h1>
+            <img src="Photo.jpg" alt="Foto de perfil" class="foto-redondeada" aria-label="Foto Anderson">
+            <h1 class="nombre-frente" aria-label="Anderson Losada">Anderson Losada</h1>
         </div>
 
-        <section id="proyectos">
+        <section id="proyectos" aria-label="Mis proyectos">
             <h2>Proyectos</h2>
             <ul>
-                <li><a href="https://proyecto1.com" target="_blank">Proyecto 1</a></li> <!--Faltan proyectos-->
-                <li><a href="https://proyecto2.com" target="_blank">Proyecto 2</a></li>
+                <li><a href="https://proyecto1.com" target="_blank" aria-label="Primer Proyecto">Proyecto 1</a></li> <!--Faltan proyectos-->
+                <li><a href="https://proyecto2.com" target="_blank" aria-label="Segundo Proyecto">Proyecto 2</a></li>
             </ul>
         </section>
 
-        <section id="resumen">
+        <section id="resumen" aria-label="Un poco sobre mí">
             <h2>Sobre Mí</h2>
-            <p>Estudiante de cuarto semestre en ingeniería de software, carrera con tres titulaciones: técnico, tecnológico y profesional. Habilidades intermedias en el ciclo de la elaboración de código y bases de datos. Habilidades básicas en pruebas de software. Conocimientos intermedios en Java y básicos en Python.</p>
+            <p>Colombiano, estudiante ingeniería de software y front-end junior. Jugador de equipo, responsable, puntual y flexible.</p>
         </section>
 
-        <section id="habilidades">
+        <section id="habilidades" aria-label="Habilidades">
             <h2>Habilidades</h2>
             <div class="habilidades">
                 <img src="html.png" alt="HTML">
@@ -62,4 +66,5 @@
     <script src="scriptA.js"></script>
 
 </body>
+
 </html>
