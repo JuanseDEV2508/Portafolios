@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Santiago">
+    <meta name="robots" content="index, follow">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mi Portfolio</h1>
+            <button id="boton-color" onclick="cambiarColor()">Cambiar a modo oscuro</button>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="inicio">
+            <h2>Bienvenido a mi Portfolio</h2>
+            <p>Mi nombre es Santiago Andres Gomez Espinosa, tengo 22 años, soy estudiante de ingenieria 
+                de software de cuarto semestre en la universidad compensar, apasionado por la tecnologia y la programación.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Mis Proyectos</h2>
+            <div class="proyecto">
+                <h3>Sistema de gestion de usuarios de una veterinaria</h3>
+                <p>Este es un proyecto personal, para gestionar los roles de un sistema de veterinaria</p>
+                <a href="https://github.com/Santiagooog/VeterinarySistem" target="_blank">GitHub</a>
+            </div>
+            
+        </section>
+
+        <section id="habilidades">
+            <h2>Mis Habilidades</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <button id="toggleButton" onclick="verContenido()">Mostrar formulario</button>
+            <div id="content" style="display: none;">
+                <form>
+                    <input type="text" placeholder="Nombre" required>
+                     <input type="email" placeholder="email"  required>
+                     <textarea placeholder="Mensaje" required></textarea>
+                     <button onclick="mostrarAlerta()" type="submit">Enviar</button>
+                 </form>
+                 <button onclick="mostarAlerta()">Mostrar alerta</button>
+            </div>
+
+
+            
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Derechos reservados. El portfolio de Santi. </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="contenido">
+        <div class="foto-container">
+            <img src="Anderson.jpg" alt="Foto de perfil" class="foto-redondeada">
+            <h1 class="nombre-frente">Anderson Losada</h1>
+        </div>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <ul>
+                <li><a href="https://proyecto1.com" target="_blank">Proyecto 1</a></li> <!--Faltan proyectos-->
+                <li><a href="https://proyecto2.com" target="_blank">Proyecto 2</a></li>
+            </ul>
+        </section>
+
+        <section id="resumen">
+            <h2>Sobre Mí</h2>
+            <p>Estudiante de cuarto semestre en ingeniería de software, carrera con tres titulaciones: técnico, tecnológico y profesional. Habilidades intermedias en el ciclo de la elaboración de código y bases de datos. Habilidades básicas en pruebas de software. Conocimientos intermedios en Java y básicos en Python.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="habilidades">
+                <img src="html.png" alt="HTML">
+                <img src="css.png" alt="CSS">
+                <img src="javascript.png" alt="JavaScript">
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="email-box">
+                <input type="text" value="andersonlosada.11@gmail.com" id="email" readonly>
+                <button onclick="copiarEmail()">Copiar correo</button>
+            </div>
+        </section>
+
+        <section id="redes">
+            <h2>Redes Sociales</h2>
+            <a href="https://github.com/AndersonFLB" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/anderson-losada-bermudez-8a9139293/" target="_blank">LinkedIn</a>
+        </section>
+    </div>
+
+    <script src="scriptA.js"></script>
+
+</body>
+</html>

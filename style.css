@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+header {
+    
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+header h1 {
+    background-image: url(./fondoo.png);
+    margin: 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+nav {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+section {
+    padding: 20px 0;
+}
+h2 {
+    color: #35424a;
+}
+/* Estilos específicos */
+#proyectos .proyecto {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#habilidades ul {
+    list-style-type: none;
+    padding: 0;
+}
+#habilidades li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background: #35424a;
+    color: #ffffff;
+    border-radius: 5px;
+}
+#contacto form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#contacto button {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+#boton-color{
+    background-color: gray;
+    border-radius: 50px;
+
+}

@@ -1,0 +1,135 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.contenido {
+    flex: 1;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.foto-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.foto-redondeada {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.nombre-frente {
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+#proyectos {
+    margin: 20px;
+}
+
+#proyectos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#proyectos ul li {
+    margin: 10px 0;
+}
+
+#proyectos ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+#proyectos ul li a:hover {
+    text-decoration: underline;
+}
+
+#resumen {
+    margin: 20px;
+}
+
+#habilidades {
+    margin: 20px;
+}
+
+.habilidades img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    object-fit: contain;
+}
+
+#contacto {
+    margin: 20px;
+}
+
+.email-box {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.email-box input {
+    border: none;
+    outline: none;
+    width: auto;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.email-box button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#redes {
+    margin: 20px;
+}
+
+#redes a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+#redes a:hover {
+    text-decoration: underline;
+}
