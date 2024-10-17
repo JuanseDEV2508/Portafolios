@@ -39,7 +39,4 @@ Copiar código
 git clone https://github.com/JuanseDEV2508/Portafolios.git
 Sube o actualiza tu portafolio en el repositorio.
 
-
-
-
-PROBANDOOOOOOOOOOOOOOOOOOOOOOOOOO
+Santiago Centeno 
