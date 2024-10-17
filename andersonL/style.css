@@ -173,3 +173,23 @@ body {
 .boton-copiar:hover {
     background-color: #ddd;
 }
+
+.footer {
+    background-color: #0a0a0a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer .direccion-fisica,
+.footer .derechos-autor {
+    margin: 0;
+}
