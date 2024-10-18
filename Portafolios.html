@@ -17,9 +17,9 @@
                 <div class="logo">
                     <h1>Equipo de Desarrollo</h1>
                 </div>
-                <nav class="navbar">
+                <nav class="navbar" aria-label="Navegación principal" >
                     <ul>
-                        <li><a href="#Portafolios.html">Inicio</a></li>
+                        <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
                         <li><a href="#portafolios">Portafolios</a></li>
                         <li><a href="#contacto">Contacto</a></li>
@@ -27,6 +27,15 @@
                 </nav>
             </div>
         </header>
+
+        <section class="inicio" id="inicio" aria-labelledby="titulo-inicio">
+            <div class="overlay"></div>
+            <div class="contenido">
+                <h1>Bienvenidos al Equipo de Desarrollo</h1>
+                <p>Somos un equipo de desarrolladores apasionados, listos para transformar ideas en soluciones innovadoras.</p>
+                <a href="#sobre-nosotros" class="btn"  aria-label="Conocer más sobre nosotros">Conócenos </a>
+            </div>
+        </section>
 
         <section class="sobre-nosotros" id="sobre-nosotros">
             <h2>Sobre Nosotros</h2>
@@ -49,7 +58,7 @@
                     <p>Desarrollador Full-Stack con pasión por la tecnología cloud.</p>
                 </div>
                 <div class="miembro">
-                    <img src="losada.jpg" alt="Losada">
+                    <img src="andersonL/imgs/photo.jpg" alt="Losada">
                     <h3>Losada</h3>
                     <p>Ingeniero de software especializado en aplicaciones móviles.</p>
                 </div>
@@ -72,19 +81,19 @@
         <!-- Portafolio Santiago -->
         <div class="portafolio" id="portafolioSantiago">
             <h2>Portafolio de Santiago</h2>
-            <button onclick="window.location.href='index.html'">Ver Portafolio</button>
+            <button onclick="window.location.href='santiagoG/index.html'">Ver Portafolio</button>
         </div>
 
         <!-- Portafolio Centeno -->
         <div class="portafolio" id="portafolioCenteno">
             <h2>Portafolio de Centeno</h2>
-            <button onclick="window.location.href=''">Ver Portafolio</button>
+            <button onclick="window.location.href='SantiagoCenteno/portafolioCenteno.html'">Ver Portafolio</button>
         </div>
 
         <!-- Portafolio Losada -->
         <div class="portafolio" id="portafolioLosada">
             <h2>Portafolio de Losada</h2>
-            <button onclick="window.location.href='PortafolioAnderson.html'">Ver Portafolio</button>
+            <button onclick="window.location.href='andersonL/PortafolioAnderson.html'">Ver Portafolio</button>
         </div>
     </div>
 
@@ -112,7 +121,7 @@
 
     <div class="info-contacto">
         <h3>Información de Contacto</h3>
-        <p>Email: contacto@ucompensar.dev</p>
+        <p>Email: jsebastianpalacios@ucompensar.edu.co</p>
         <p>Teléfono: +57 123 456 7890</p>
         <p>Ubicación: Bogotá, Colombia</p>
     </div>
@@ -124,6 +133,12 @@
     </div>
 
 </section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </div>
+</footer>
     
 </body>
 </html>
