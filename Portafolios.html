@@ -31,17 +31,17 @@
         <section class="inicio" id="inicio" aria-labelledby="titulo-inicio">
             <div class="overlay"></div>
             <div class="contenido">
-                <h2>Bienvenidos al Equipo de Desarrollo</h2>
+                <h2 id="titulo-inicio">Bienvenidos al Equipo de Desarrollo</h2>
                 <p>Somos un equipo de desarrolladores apasionados, listos para transformar ideas en soluciones innovadoras.</p>
                 <a href="#sobre-nosotros" class="btn"  aria-label="Conocer más sobre nosotros">Conócenos </a>
             </div>
         </section>
 
         <section class="sobre-nosotros" id="sobre-nosotros" aria-labelledby="titulo-sobre-nosotros">
-            <h2>Sobre Nosotros</h2>
+            <h2 id="titulo-sobre-nosotros">Sobre Nosotros</h2>
             <p>Somos un equipo de estudiantes apasionados de la <strong>Ingeniería de Software</strong> de UCompensar, dedicados al desarrollo de aplicaciones web y móviles de alta calidad. Nuestra meta es aprender, crear y ofrecer soluciones innovadoras que impulsen el futuro de la tecnología.</p>
             
-            <div class="equipo" aria-labelledby="equipo-titulo">
+            <div class="equipo" >
                 <div class="miembro">
                     <img src="images/Sebastian.jpg" alt="Foto Sebastian Desarrollador">
                     <h3>Sebastian</h3>
@@ -70,7 +70,7 @@
     <p>Selecciona un portafolio para ver más detalles:</p>
 
     <section class="portafolios" id="portafolios" aria-labelledby="titulo-portafolios">
-    <div class="portafolio-Menu">
+    <div class="portafolio-Menu" id="titulo-portafolios">
 
         <!-- Portafolio Sebastian -->
         <div class="portafolio" id="portafolioSebastian">
@@ -101,10 +101,10 @@
 
 <section class="contacto" id="contacto" aria-labelledby="titulo-contacto">
 
-    <h2>Contacto</h2>
+    <h2 id="titulo-contacto">Contacto</h2>
     <p>¿Tienes alguna pregunta o quieres saber más sobre nuestro trabajo? ¡Contáctanos!</p>
     
-    <div class="formulario-contacto">
+    <div class="formulario-contacto" id="titulo-formulario">
         <form id="contactForm" onsubmit="return enviarFormulario();"  method="post" aria-labelledby="titulo-formulario">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required aria-required="true">
