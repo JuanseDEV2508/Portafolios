@@ -2,80 +2,116 @@
 <html lang="es">
 <head>
     <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Santiago">
-    <meta name="robots" content="index, follow">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Probando</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Mi Portfolio</h1>
-            <button id="boton-color" onclick="cambiarColor()">Cambiar a modo oscuro</button>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Habilidades</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+    <section class="container">
+        <div class="container-img"><img src="/santiagoG/images/yo.jpg" alt="Imagen de Santiago sonriendo"></div>
+        
+        <h1>Santiago Andrés Gómez</h1>
+      <div class="container-p">
+      <p>Mi nombre es Santiago Andres Gomez Espinosa, tengo 22 años, soy estudiante de ingenieria 
+        de software de cuarto semestre en la universidad compensar, apasionado por la tecnologia y la programación.</p>
+    </div>
+    </section>
+    <main>
+        <h2 id="proyecto-titulo">Proyectos</h2>
+        <div id="container-proyectos">
+
+            <div>
+                <h3>Java con Hibernate</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, aliquid!</p>
+                <a href="https://github.com/Santiagooog/ProyectoHibernate" target="_blank"><img id="logo-github" src="/santiagoG/images/github-mark.png" alt="Logo de github"  ></a>
+                
+            </div>
+            <div>
+                <h3>Java con JPA</h3>
+                <p>Crud en java usando la tecnología JPA</p>
+                <a href="https://github.com/Santiagooog/JPA-Proyecto" target="_blank"><img id="logo-github" src="/santiagoG/images/github-mark.png" alt="Logo de github"></a>    
+            </div><div>
+                <h3>CRUD con Java</h3>
+                <p>CRUD en Java usando las tecnologías JPA con Hibernate</p>
+                <a href="https://github.com/Santiagooog/ProyectoCRUD" target="_blank"><img id="logo-github" src="/santiagoG/images/github-mark.png" alt="Logo de github"></a>
+            </div><div>
+                <h3>Sistema de gestión con C#</h3>
+                <p>Sistema de gestion de usuarios para una veterinaria</p>
+                <a href="https://github.com/Santiagooog/Desarrollo-de-software-grupo-2" target="_blank"><img id="logo-github" src="/santiagoG/images/github-mark.png" alt="Logo de github"></a>
+            </div><div>
+                <h3>Titulo proyecto</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, aliquid!</p>
+                <a href="" target="_blank"><img id="logo-github" src="/santiagoG/images/github-mark.png" alt="Logo de github"></a>   
+            </div><div>
+                <h3>Titulo proyecto</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, aliquid!</p>
+                <a href="" target="_blank"><img id="logo-github" src="/santiagoG/images/github-mark.png" alt="Logo de github"></a>
+            </div>
+
         </div>
-    </header>
+        <section id="container-habilidades">
+            <h4 id="habilidades">Habilidades</h4>
+            <p>Actualmente cuento con conocimientos en varios lenguajes de programacion y algunas herramientas muy importantes, siempre estoy aprendiendo sobre ellas.</p>
+            <div class="container-skills">
 
-    <main class="container">
-        <section id="inicio">
-            <h2>Bienvenido a mi Portfolio</h2>
-            <p>Mi nombre es Santiago Andres Gomez Espinosa, tengo 22 años, soy estudiante de ingenieria 
-                de software de cuarto semestre en la universidad compensar, apasionado por la tecnologia y la programación.</p>
-        </section>
-
-        <section id="proyectos">
-            <h2>Mis Proyectos</h2>
-            <div class="proyecto">
-                <h3>Sistema de gestion de usuarios de una veterinaria</h3>
-                <p>Este es un proyecto personal, para gestionar los roles de un sistema de veterinaria</p>
-                <a href="https://github.com/Santiagooog/VeterinarySistem" target="_blank">GitHub</a>
+                <div>
+                    <img class="logos" src="/santiagoG/images/JS.png"  alt="Logo de JavaScript">
+                    <p class="porcentaje">68%</p>
+                </div>
+                <div>
+                    <img class="logos" src="/santiagoG/images/java.png"  alt="Logo de java">
+                    <p class="porcentaje">85%</p>
+                </div>
+                <div>
+                    <img class="logos" src="/santiagoG/images/SQL.png"  alt="Logo de sql">
+                    <p class="porcentaje">60%</p>
+                </div>
+                <div>
+                    <img class="logos" src="/santiagoG/images/node.png"  alt="Logo de node js">
+                    <p class="porcentaje">68%</p>
+                </div>
+                <div>
+                    <img class="logos" src="/santiagoG/images/express.png"  alt="Logo de express js">
+                    <p class="porcentaje">50%</p>
+                </div>
             </div>
-            
         </section>
+        <h5 id="titulo-contacto">Contáctame</h5>
 
-        <section id="habilidades">
-            <h2>Mis Habilidades</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>SQL</li>
-            </ul>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-
-            <button id="toggleButton" onclick="verContenido()">Mostrar formulario</button>
-            <div id="content" style="display: none;">
-                <form>
-                    <input type="text" placeholder="Nombre" required>
-                     <input type="email" placeholder="email"  required>
-                     <textarea placeholder="Mensaje" required></textarea>
-                     <button onclick="mostrarAlerta()" type="submit">Enviar</button>
-                 </form>
-                 <button onclick="mostarAlerta()">Mostrar alerta</button>
-            </div>
-
-
-            
-            
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; Derechos reservados. El portfolio de Santi. </p>
-    </footer>
+    <section class="container-form">   
+        <form action id="formulario"></form>
+        <div>
+            <label class="form-label" for="" aria-placeholder="Nombre":">Nombre</label>
+            <input class="input" type="text" placeholder="Nombre">
+        </div>
+        <div>
+            <label class="form-label" for="">Correo</label>
+            <input class="input" type="email" placeholder="Email">
+        </div>
+        <div>
+            <label class="form-label" for="">Asunto</label>
+            <input class="input" type="text" placeholder="Asunto">
+        </div>
+        
+            <input class="submit" type="submit">
+             
+              
+        </form>
+    </section>      
+  </main>
+  <footer class="pie">
+     <p>&copy;Derechos reservados</p>
+  </footer>
 </body>
 </html>
