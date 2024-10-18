@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Probando</title>
+  <meta name="description" content="Portfolio de Santiago Gómez, programador apasionado por la tecnología">
+  <meta name="keywords" content="portfolio,programacion,programador,html,css,javascript,java">
+  <title>Portfolio Santiago</title>
 </head>
 <body>
-  <header>
+  <header id="Header">
+    
     <nav>
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Proyectos</a></li>
-        <li><a href="#">Habilidades</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#Header" aria-label="Ir al inicio de la página">Inicio</a></li>
+        <li><a href="#proyecto-titulo" aria-label="Ver los proyectos de Santiago">Proyectos</a></li>
+        <li><a href="#container-habilidades" aria-label="Ver los conocimientos de Santiago como programador">Habilidades</a></li>
+        <li><a href="#titulo-contacto" aria-label="Contactarme con Santiago">Contacto</a></li>
+        <li><a href="/Portafolios.html" aria-label="Volver a los portafolios del grupo">Equipo</a></li>
       </ul>
     </nav>
   </header>
@@ -21,7 +26,7 @@
     <section class="container">
         <div class="container-img"><img src="/santiagoG/images/yo.jpg" alt="Imagen de Santiago sonriendo"></div>
         
-        <h1>Santiago Andrés Gómez</h1>
+        <h1 aria-label="nombre de Santiago">Santiago Andrés Gómez</h1>
       <div class="container-p">
       <p>Mi nombre es Santiago Andres Gomez Espinosa, tengo 22 años, soy estudiante de ingenieria 
         de software de cuarto semestre en la universidad compensar, apasionado por la tecnologia y la programación.</p>
@@ -90,23 +95,29 @@
         <h5 id="titulo-contacto">Contáctame</h5>
 
     <section class="container-form">   
-        <form action id="formulario"></form>
+        <form action id="formulario-contacto" aria-labelledby="formulario para contactar a Santiago"></form>
         <div>
-            <label class="form-label" for="" aria-placeholder="Nombre":">Nombre</label>
-            <input class="input" type="text" placeholder="Nombre">
+            <label class="form-label"aria-placeholder="Nombre":>Nombre <span class="required">*</span></label>
+            <input id="nombre-contacto" type="text" placeholder="Nombre" name="nombre-contacto" required aria-required="true" aria-describedby="nombreError" aria-invalid="false" pattern="[A-Za-zÑñáéíóúÁÉÍÓÚ\s]{2,50}">
+            <span id="nombreError" class="error-mensaje" style="display: none;"></span>
+
         </div>
         <div>
-            <label class="form-label" for="">Correo</label>
-            <input class="input" type="email" placeholder="Email">
+
+            <label class="form-label">Correo Electronico: <span class="required">*</span></label>
+        <input type="email" placeholder="Correo Electronico" id="email-contacto" name="email-contacto" required aria-required="true" aria-invalid="false" aria-describedby="emailError">
+        <span id="emailError" class="error-mensaje" style="display: none;">Ingrese un email valido</span>
         </div>
+
         <div>
-            <label class="form-label" for="">Asunto</label>
-            <input class="input" type="text" placeholder="Asunto">
+            <label class="form-label">Asunto <span class="required">*</span></label>
+        <input type="text" placeholder="Asunto" id="asunto-contacto"name="asunto-contacto" required aria-required="true" aria-invalid="false" aria-describedby="asuntoError">
+        <span id="asuntoError" class="error-mensaje" style="display: none;">Ingrese un asunto valido</span>
         </div>
         
-            <input class="submit" type="submit">
-             
-              
+        <button id="envio-mensaje" class="exitoso-mensaje" class="submit" type="submit">Enviar</button>
+        
+                
         </form>
     </section>      
   </main>
