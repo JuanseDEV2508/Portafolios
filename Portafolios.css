@@ -64,6 +64,9 @@ h1 {
     margin-top: 60px;
 }
 
+.inicio h2{
+    font-size: 50px;
+}
 .portafolio-Menu {
     display: flex;
     justify-content: space-around;
