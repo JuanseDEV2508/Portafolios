@@ -136,9 +136,13 @@ main{
   font-size: 50px;
   text-align: center;
 }
+#container-habilidades{
+  margin-bottom:80px ;
+}
 #container-habilidades p {
   text-align: center;
   font-size: 30px;
+  
 }
 .container-skills{
   margin-top: 70px;
@@ -151,7 +155,7 @@ main{
   width: 90px;
   height: 150px;
   background-color: #393131;
-  margin: auto    ;
+  margin: auto;
   background-color: #f0f0f0;
   border: solid 1px #0f0f0f;
   border-radius: 20px;
@@ -169,53 +173,87 @@ main{
   font-size: 10px;
 }
 
-#titulo-contacto{
-  font-size:40px;
-  text-align: center;
-}
+/*Formulario de contacto*/
 
-.container-form{
-  background-color: rgb(234, 232, 229);
-  width: 300px;
-  height: 400px;
-  padding: 70px;
+.contacto{
+  box-sizing: border-box;
   margin: auto;
-  display: grid;
-  place-items: center;
-  justify-content: center;
-  border: solid 2px;
-  border-radius: 10%;
+  width: 400px;
+  height: 550px;
+  background-color: rgba(201, 199, 235, 0.396);
+  padding: 30px;
+  border: solid 1px #1f1f1f;
+  border-radius: 20px;
+  box-shadow: 0 0 50px #000000;
 }
 
-.container-form > div{
-  display: flex;
+.contacto h5{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
 
-  width: 75%;
-  margin: 10px;
-  padding: 30px;
-  height: 30px;
+.input{
+  width: 250px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.input input{
+  height: 40px;
+  margin-bottom: 30px;
+  width: 242px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.input textarea{
+  height: 90px;
+  border: solid 1px #1f1f1f;
+  width: 242px;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border: solid 1px;
   border-radius: 10px;
 }
-.form-label{
-  font-size:30px;
-  margin-right: 20px;
-  align-self: center;
-}
-.submit{
-  margin-top: 30px;
-  height: 40px;
-  padding: 20px;
-  border: solid 1px;
 
-border-radius: 10%;}
+.btn-submit{
+  margin-top: 40px;
+  text-align: center;
+}
+#enviar{
+  cursor: pointer;
+  border: solid 1px;
+  border-radius: 10px;
+  height:50px ;
+  width: 100px;
+  margin: auto;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+#enviar:hover{
+  background-color: #e5e5f3;
+}
+
+.btn-arriba{
+  margin: 40px;
+  display: grid;
+  box-sizing: border-box;
+  justify-content: end;
+  
+}
+
+
+/*Footer de la página*/
 .pie{
   width: 100%;
   background-color: #0f0f0f;
   height: 50px;
   display: flex;
   height: 100px;
-  margin-top: 50px;
+  margin-top: 20px;
   justify-content: center;
   align-items: center;
 }
