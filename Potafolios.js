@@ -1,19 +1,37 @@
 function enviarFormulario() {
-    var nombre = document.getElementById("nombre").value;
-    var email = document.getElementById("email").value;
-    var mensaje = document.getElementById("mensaje").value;
+    // Obtener los valores del formulario
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;
+    const mensaje = document.getElementById("mensaje").value;
 
-    // Validación adicional (por ejemplo, formato de correo electrónico)
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // Validación básica de correo electrónico
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
         alert("Por favor, introduce un correo electrónico válido.");
-        return false; // No enviar el formulario si hay error
+        return false; // Evitar el envío si el email es inválido
     }
 
-    // Ocultar el formulario y mostrar el mensaje de agradecimiento
-    document.getElementById("contactForm").style.display = "none";
-    document.getElementById("nombreUsuario").textContent = nombre; // Poner el nombre del usuario
-    document.getElementById("mensajeGracias").style.display = "block"; // Mostrar el mensaje de agradecimiento
+    // Enviar los datos al servidor mediante fetch
+    fetch('/guardarFormulario', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ nombre, email, mensaje })
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert("¡Formulario enviado exitosamente!");
+                document.getElementById("contactForm").reset(); // Limpiar el formulario
+            } else {
+                alert("Error al enviar el formulario: " + data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert("Hubo un problema al enviar los datos.");
+        });
 
-    return false; // Prevenir que la página se recargue
+    return false; // Prevenir recarga de la página
 }
