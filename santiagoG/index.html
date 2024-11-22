@@ -30,43 +30,23 @@
   </head>
   <body>
     <header id="Header">
-      <nav>
-        <ul>
-          <li>
-            <a href="#Header" aria-label="Ir al inicio de la página">Inicio</a>
-          </li>
-          <li>
-            <a
-              href="#proyecto-titulo"
-              aria-label="Ver los proyectos de Santiago"
-              >Proyectos</a
-            >
-          </li>
-          <li>
-            <a
-              href="#container-habilidades"
-              aria-label="Ver los conocimientos de Santiago como programador"
-              >Habilidades</a
-            >
-          </li>
-          <li>
-            <a href="#contacto" aria-label="Contactarme con Santiago"
-              >Contacto</a
-            >
-          </li>
-          <li>
-            <a
-              href="/Portafolios.html"
-              aria-label="Volver a los portafolios del grupo"
-              >Equipo</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <div class="container-header">
+        <nav>
+          <ul>
+            <div class="equipo">
+            <li>Equipo de desarrollo</li>
+          </div>
+            <li><a href="#container-img">Inicio</a></li>
+            <li><a href="#proyecto-titulo">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="../Portafolios.html">Nuestro Equipo</a></li>
+          </ul>
+        </nav>
+      </div>
 
+    </header>
     <section class="container">
-      <div class="container-img">
+      <div id="container-img">
         <img
           src="/santiagoG/images/yo.jpg"
           alt="Imagen de Santiago sonriendo"
@@ -88,15 +68,14 @@
         <div>
           <h3>Java con Hibernate</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia,
-            aliquid!
+            Lorem, ipsum dolor sit amet consectetur 
           </p>
           <a
             href="https://github.com/Santiagooog/ProyectoHibernate"
             target="_blank"
             ><img
               id="logo-github"
-              src="/santiagoG/images/github-mark.png"
+              src="/santiagoG/images/github-mark-white.png"
               alt="Logo de github"
           /></a>
         </div>
@@ -106,7 +85,7 @@
           <a href="https://github.com/Santiagooog/JPA-Proyecto" target="_blank"
             ><img
               id="logo-github"
-              src="/santiagoG/images/github-mark.png"
+              src="/santiagoG/images/github-mark-white.png"
               alt="Logo de github"
           /></a>
         </div>
@@ -116,7 +95,7 @@
           <a href="https://github.com/Santiagooog/ProyectoCRUD" target="_blank"
             ><img
               id="logo-github"
-              src="/santiagoG/images/github-mark.png"
+              src="/santiagoG/images/github-mark-white.png"
               alt="Logo de github"
           /></a>
         </div>
@@ -128,33 +107,31 @@
             target="_blank"
             ><img
               id="logo-github"
-              src="/santiagoG/images/github-mark.png"
+              src="/santiagoG/images/github-mark-white.png"
               alt="Logo de github"
           /></a>
         </div>
         <div>
           <h3>Titulo proyecto</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia,
-            aliquid!
+            Lorem, ipsum dolor sit amet consectetur 
           </p>
           <a href="" target="_blank"
             ><img
               id="logo-github"
-              src="/santiagoG/images/github-mark.png"
+              src="/santiagoG/images/github-mark-white.png"
               alt="Logo de github"
           /></a>
         </div>
         <div>
           <h3>Titulo proyecto</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia,
-            aliquid!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </p>
           <a href="" target="_blank"
             ><img
               id="logo-github"
-              src="/santiagoG/images/github-mark.png"
+              src="/santiagoG/images/github-mark-white.png"
               alt="Logo de github"
           /></a>
         </div>
@@ -212,14 +189,14 @@
       </section>
 
       <section id="contacto" class="contacto">
-          <h5>Contáctame</h5>
+          <h5>Contacto</h5>
           <form id="formulario-contacto" aria-labelledby="Formulario para contactar a Santiago">
             <div class="input">
                 <input id="form-nombre" name="form-nombre" type="text" placeholder="Nombre" required aria-required="true" aria-describedby="nombreError" aria-invalid="false" pattern="[A-Za-zÑñáéíóúÁÉÍÓÚ\s]{2,50}">
                 <span id="nombreError" class="error-mensaje" style="display: none;">Ingrese un nombre válido</span>
             </div>
             <div class="input">
-                <input id="form-email" name="form-email" type="email" placeholder="email" required aria-required="true" aria-describedby="emailError" aria-invalid="false">
+                <input id="form-email" name="form-email" type="email" placeholder="Email" required aria-required="true" aria-describedby="emailError" aria-invalid="false">
                 <span id="emailError" class="error-mensaje" style="display: none;">Ingrese un email válido</span>
             </div>
             <div class="input">
@@ -234,8 +211,8 @@
           </form>  
       </section>
       <div class="btn-arriba">
-        <a href="#Header">
-            <img  src="/santiagoG/images/arriba.png" alt="Volver a la barra de navegacion">
+        <a href="#container-img">
+            <img  src="/santiagoG/images/up-arrow_969593 (2).png" alt="Volver a la barra de navegacion">
         </a>
         
       </div>

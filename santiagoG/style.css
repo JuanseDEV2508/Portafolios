@@ -1,129 +1,151 @@
 body{
   margin: 0;
+  background-color: rgb(19, 18, 18);
 }
-.header {
-  background-color: #1f1f1f;
-  padding: 20px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+#Header{
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 100;
 }
 
-.header .container {
+.container-header{
+  background-color: rgb(31, 31, 31);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  position: sticky;
+  top: 0;
+  height: 75px;
   display: flex;
-  justify-content: space-between;
+  box-sizing: content-box;
+  
+}
+
+.equipo{
+  height: 40px;
+  width: 190px;
+  display: flex;
   align-items: center;
-  width: 90%;
-  margin: 0 auto;
 }
-
-nav{    
-  
-  padding: 20px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: sticky;
+.equipo li{
+  color: #007bff;
+  font-size: 20px;
+  font-weight: bold;
+}
+nav{
+  min-width: 100%;
   display: flex;
-  background-color: #1f1f1f; 
-  
-  justify-content: center;
-  top: 0;
-  z-index: 100;
-
+  flex-direction: column;
+  margin:0 0;
 }
-
-nav ul{
-  
-  margin: 25px;
+.container-header nav ul{
+  display: flex;
   list-style: none;
-
-}
-nav li{
-
-  padding: 5px;
-  display: inline-block;
-  margin: 5px;
-  font-size: 2rem;
-  
-}
-nav a{
+  justify-content: space-around;
+  align-items: center;
   text-decoration: none;
-  color: rgb(183, 183, 183);
 }
+
+.container-header nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+nav ul li a:hover {
+  color: #007bff;
+}
+
+/*
+      SECCCION PRINCIPAL DEL DOCUMENTO
+*/
+
 .container{
-
-  margin:10px;
+  margin:auto;
+  max-width: 450px;
+  min-height: 300px;
   border-radius: 5%;
-  background-color: rgb(183, 183, 183);
-    
+  background-color:#1f1f1f94;
+  box-sizing: border-box;
 }
 
-.container-img{
+#container-img{
   margin-top:20px;
   padding: 10px;
   text-align: center;
 }
 
-.container-img img{ 
+#container-img img{ 
   border-radius: 100%;
-  width: 150px;
-  height: 150px;
+  width: 110px;
+  height: 110px;
   border: solid #393131;
   margin-top: 20px;
 }
 
 h1{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #e5e5f3;
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   margin-top: 10px;
   margin-bottom: 0;
 }
 .container-p{
   margin: auto;
   padding: 10px;
-  text-align: justify;
-
-  width: 500px;
+  max-width: 100%;
   height: 100px;
   box-shadow: 20px #f0f0f0;
 }
 .container-p p{
-
-  color: #0f0f0f;/*Color letra descripción*/
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 15px;/*Tamaño fuente*/
-  font-style: italic;
+  color: #ffffffb5;
+  text-wrap: balance;
+  text-align: center;
 }
 
-#container-proyectos{
+/*       PROYECTOSSSSSSSSS      */
 
+#container-proyectos{
   display: grid;
+  margin: auto;
   grid-template-columns: 1fr 1fr 1fr;
-  
+  background-color: #3938389d;
+  max-width: 800px;
+  box-sizing: border-box;
+  box-shadow: 0 0 2px #f0f0f0;
+  border-radius: 30px;
 }
 
 #container-proyectos > div{
-  
-  width: 250px;
-  height: 200px;
-  background-color: rgb(247, 247, 247);
+  box-sizing: border-box;
+  margin: 20px 10px 20px 10px;
+  width: 230px;
+  height: 160px;
+  background-color: #1f1f1fe1;
   border: solid black 2px;
-  border-radius: 10%;
-  margin: 50px;
+  border-radius: 20%;
   text-align: center;
   justify-self: center;
+
+}
+h3{
+  color: #e5e5f3;
 }
 
 #container-proyectos div p{/*Parrafos en proyectos*/
-  font-size: 20px;
+  font-size: 15px;
+  text-wrap: balance;
+  color: #f0f0f0a0;
 }
 
 main{
-  background-color: #f6f5f5;
-
+  background-color: rgb(19, 18, 18);
+  max-width: 100%;
 }
 
 #proyecto-titulo{
+  color: #e5e5f3;
   padding-top: 30px;
   text-align: center;
   font-size: 40px;
@@ -131,18 +153,31 @@ main{
 #logo-github{
   width: 40px;
 }
-#habilidades{
-  margin-top: 90px;
+
+/*--------------------HABILIDADES-----------------*/
+
+
+#container-habilidades{
+  margin: auto;
+  background-color: #1f1f1fe1;
+  max-width: 700px;
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: 0 0 2px #f0f0f0;
+}
+
+#container-habilidades h4 {
+  color: #d4d4d8;
+  margin-top: 60px;
+  margin-bottom: 20px;
   font-size: 50px;
   text-align: center;
 }
-#container-habilidades{
-  margin-bottom:80px ;
-}
+
 #container-habilidades p {
   text-align: center;
   font-size: 30px;
-  
+  color:#ffffff;
 }
 .container-skills{
   margin-top: 70px;
@@ -154,44 +189,44 @@ main{
   
   width: 90px;
   height: 150px;
-  background-color: #393131;
   margin: auto;
-  background-color: #f0f0f0;
+  background-color: #272727;
   border: solid 1px #0f0f0f;
   border-radius: 20px;
   
-  
 }
 .logos{
-  
   width:100%;
   height:30%;
   border-bottom: solid 1px #0f0f0f;
   border-radius: 20px;
 }
 .porcentaje{
-  font-size: 10px;
+  font-size: 50px;
+  color: #121277;
 }
 
 /*Formulario de contacto*/
 
 .contacto{
+  margin-top: 50px;
+  margin-left: 37vw;
   box-sizing: border-box;
-  margin: auto;
-  width: 400px;
-  height: 550px;
-  background-color: rgba(201, 199, 235, 0.396);
+  width: 350px;
+  height: 400px;
+  background-color: rgba(72, 72, 73, 0.396);
   padding: 30px;
   border: solid 1px #1f1f1f;
   border-radius: 20px;
-  box-shadow: 0 0 50px #000000;
+  box-shadow: 0 0 3px #f0f0f0;
 }
 
 .contacto h5{
+  color: #e5e5f3;
   font-size: 40px;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .input{
@@ -202,7 +237,7 @@ main{
 
 .input input{
   height: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   width: 242px;
   border-radius: 10px;
   font-size: 15px;
@@ -220,7 +255,7 @@ main{
 }
 
 .btn-submit{
-  margin-top: 40px;
+  margin-top: 10px;
   text-align: center;
 }
 #enviar{
@@ -238,27 +273,31 @@ main{
 }
 
 .btn-arriba{
+  position: fixed;
+  bottom: 0px;
+  left: 90%;
   margin: 40px;
   display: grid;
   box-sizing: border-box;
   justify-content: end;
-  
+  z-index: 100;
 }
-
-
 /*Footer de la página*/
+
 .pie{
+  position: absolute;
+  left :50%;
+  transform: translateX(-50%);
   width: 100%;
-  background-color: #0f0f0f;
-  height: 50px;
+  background-color:rgba(31, 31, 31, 0.58);
   display: flex;
   height: 100px;
   margin-top: 20px;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
+  align-items: end;
 }
 .pie p{
-  
+  margin: auto;
   color: #f6f5f5;
 }
 
