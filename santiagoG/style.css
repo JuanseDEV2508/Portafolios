@@ -140,6 +140,9 @@ h3{
 }
 
 main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgb(19, 18, 18);
   max-width: 100%;
 }
@@ -158,7 +161,7 @@ main{
 
 
 #container-habilidades{
-  margin: auto;
+  margin-top: 70px;
   background-color: #1f1f1fe1;
   max-width: 700px;
   height: 500px;
@@ -177,7 +180,7 @@ main{
 #container-habilidades p {
   text-align: center;
   font-size: 30px;
-  color:#ffffff;
+  color:#ffffff98;
 }
 .container-skills{
   margin-top: 70px;
@@ -210,16 +213,18 @@ main{
 
 .contacto{
   margin-top: 50px;
-  margin-left: 37vw;
+  margin-bottom: 20px;
   box-sizing: border-box;
   width: 350px;
   height: 400px;
-  background-color: rgba(72, 72, 73, 0.396);
+  background-color: rgba(55, 55, 56, 0.396);
   padding: 30px;
   border: solid 1px #1f1f1f;
   border-radius: 20px;
   box-shadow: 0 0 3px #f0f0f0;
 }
+
+
 
 .contacto h5{
   color: #e5e5f3;
